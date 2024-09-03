@@ -5,7 +5,7 @@ import { connectDB } from './db/connection.js'
 import authRouter from './src/modules/auth/auth.router.js'
 import messageRouter from './src/modules/messages/message.router.js'
 import userRouter from './src/modules/user/user.router.js'
-
+import cors from 'cors'
 const MongoDBStore = mongoSession(session)
 const app = express()
 const port = process.env.PORT || 3000
