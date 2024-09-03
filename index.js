@@ -8,7 +8,7 @@ import userRouter from './src/modules/user/user.router.js'
 
 const MongoDBStore = mongoSession(session)
 const app = express()
-const port = 3000
+const port = process.env.PORT 3000
 connectDB()
 const store = MongoDBStore({
     uri: 'mongodb+srv://omerbagprog:Lx6X9u7ZyeJtB87a@cluster0.89df3.mongodb.net/sarahaMVC',
