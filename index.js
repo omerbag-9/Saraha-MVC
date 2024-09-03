@@ -14,6 +14,7 @@ const store = MongoDBStore({
     uri: 'mongodb+srv://omerbagprog:Lx6X9u7ZyeJtB87a@cluster0.89df3.mongodb.net/sarahaMVC',
     collection : 'mySessions'
 })
+app.use(cors())
 app.use(session({
     secret:"secret",
     resave: false,
